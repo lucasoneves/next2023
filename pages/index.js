@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Main.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h2>Next 2023</h2>
+        <ul>
+          <li><Link href="/posts/first-post">First post</Link></li>
+        </ul>
       </main>
     </>
   )
