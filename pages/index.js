@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Main.module.css'
 import Link from 'next/link'
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h2>Next 2023</h2>
+        <Image src='/../public/images/profile.jpg' height={144} width={144} alt="Lucas Neves"/>
         <ul>
           <li><Link href="/posts/first-post">First post</Link></li>
         </ul>
