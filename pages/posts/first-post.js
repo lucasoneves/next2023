@@ -10,7 +10,6 @@ export default function FirstPost() {
         <title>NextJs - First post</title>
       </Head>
       <div>
-        <Link href="/">Back to home</Link>
         <h2>First Post</h2>
       </div>
       <Button title="Clique aqui" />
