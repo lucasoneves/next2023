@@ -28,6 +28,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
+            <Link href="/blog">Blog</Link>
             <Image
               priority
               src="/images/profile.jpg"
