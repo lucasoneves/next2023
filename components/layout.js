@@ -4,8 +4,8 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Lucas Neves';
-export const siteTitle = 'Lucas Neves - I write about technology, web development and carreer.';
+const name = 'lucas neves';
+export const siteTitle = 'lucas neves - i write about technology, web development and carreer.';
 
 export default function Layout({ children, home }) {
   return (
@@ -28,7 +28,8 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Link href="/blog">Blog</Link>
+            <Link href="/blog">blog</Link>
+            <Link href="/projects">projects</Link>
             <Image
               priority
               src="/images/profile.jpg"
