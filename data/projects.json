@@ -1,0 +1,7 @@
+{
+    "projects": [
+        { "id": 1, "title": "Estacione Aqui", "path": "estacione-aqui"},
+        { "id": 2, "title": "Sign Form - The Odin Project", "path": "sign-form-odin-project"},
+        { "id": 3, "title": "Rock, Paper, Scissor", "path": "rock-paper-scissor"}
+    ]
+}

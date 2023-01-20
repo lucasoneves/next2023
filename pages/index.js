@@ -24,8 +24,8 @@ export default function Home({allPostsData}) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hi. I'm Lucas Neves. Front-end developer from São Paulo - Brazil.
-          Currently i work with React and it's ecossystem.
+          hi. i'm lucas neves. front-end developer from São Paulo - Brazil.
+          currently i work with React and it's ecossystem.
         </p>
       </section>
     </Layout>
