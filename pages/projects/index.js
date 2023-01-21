@@ -25,11 +25,23 @@ export default function Projects(props) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
   console.log('Regerating...')
   const filePath = path.join(process.cwd(), 'data', 'projects.json') 
   const jsonData = await fs.readFile(filePath)
   const data = JSON.parse(jsonData)
+
+  // if (!data) {
+  //   return {
+  //     redirect: {
+  //       destination: '/'
+  //     }
+  //   }
+  // }
+
+  if (data.projects.length === 0) {
+    return { notFound: true }
+  }
   return {
     props: {
       projects: data.projects
