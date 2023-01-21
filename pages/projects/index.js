@@ -26,6 +26,7 @@ export default function Projects(props) {
 }
 
 export async function getStaticProps() {
+  console.log('Regerating...')
   const filePath = path.join(process.cwd(), 'data', 'projects.json') 
   const jsonData = await fs.readFile(filePath)
   const data = JSON.parse(jsonData)
@@ -33,5 +34,6 @@ export async function getStaticProps() {
     props: {
       projects: data.projects
     },
+    revalidate: 10
   };
 }
