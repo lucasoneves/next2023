@@ -27,7 +27,7 @@ export default function Projects(props) {
 
 export async function getStaticProps(context) {
   console.log('Regerating...')
-  const filePath = path.join(process.cwd(), 'data', 'projects.json') 
+  const filePath = path.join(process.cwd(), 'data', 'dummy-backend.json') 
   const jsonData = await fs.readFile(filePath)
   const data = JSON.parse(jsonData)
 
