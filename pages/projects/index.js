@@ -16,7 +16,7 @@ export default function Projects(props) {
         <ul>
           {projects.map((project) => (
             <li key={project.id}>
-              <Link href={`/projects/${project.path}`}>{project.title}</Link>
+              <Link href={`/projects/${project.pathName}`}>{project.title}</Link>
             </li>
           ))}
         </ul>
