@@ -1,7 +1,28 @@
 {
-    "projects": [
-        { "id": 1, "title": "Estacione Aqui", "path": "estacione-aqui"},
-        { "id": 2, "title": "Sign Form - The Odin Project", "path": "sign-form-odin-project"},
-        { "id": 3, "title": "Rock, Paper, Scissor", "path": "rock-paper-scissor"}
-    ]
+  "projects": [
+    {
+      "title": "Estacione Aqui",
+      "id": "1",
+      "pathName": "estacione-aqui",
+      "description": "Um simples sistema de gerenciamento para estacionamentos.",
+      "createdAt": "2010-07-04T19:51:27.600Z",
+      "updatedAt": "2010-07-05T19:51:27.600Z"
+    },
+    {
+      "title": "Rock, Paper, Scissor",
+      "id": "2",
+      "pathName": "rock-paper-scissor",
+      "description": "O clássico jogo Pedra, papel e tesoura",
+      "createdAt": "2010-07-04T19:51:27.600Z",
+      "updatedAt": "2010-07-05T19:51:27.600Z"
+    },
+    {
+      "title": "Sign in Form - The Odin Project",
+      "id": "3",
+      "pathName": "sign-in-odin-project",
+      "description": "Formulário de cadastro que faz parte do programa The Odin Project",
+      "createdAt": "2010-07-04T19:51:27.600Z",
+      "updatedAt": "2010-07-05T19:51:27.600Z"
+    }
+  ]
 }
