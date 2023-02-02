@@ -1,9 +1,16 @@
 import { promises as fs } from "fs";
+import Link from "next/link";
 import path from "path";
+import Layout from "../../components/layout";
 
 export default function DetailProject(props) {
   const { loadedProject } = props;
-  return <h2>Nome do projeto: {loadedProject.title}</h2>;
+  return (
+    <Layout projects>
+      <h2>{loadedProject.title}</h2>
+      <p>{loadedProject.description}</p>
+    </Layout>
+  );
 }
 
 async function getData() {
