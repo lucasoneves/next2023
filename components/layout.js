@@ -5,18 +5,19 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { Header } from "./Header";
 
-
-
 export default function Layout({ children, home, projects }) {
   return (
     <>
-      
-        <Header />
+      <Header />
       <div className={styles.container}>
         <main>{children}</main>
         {!home && (
           <div className={styles.backToHome}>
-            {projects ? <Link href="/projects">← back to projects</Link> : <Link href="/">← back to home</Link>}
+            {projects ? (
+              <Link href="/projects">← back to projects</Link>
+            ) : (
+              <Link href="/">← back to home</Link>
+            )}
           </div>
         )}
       </div>
