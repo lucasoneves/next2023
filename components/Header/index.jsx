@@ -1,4 +1,4 @@
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
