@@ -17,16 +17,18 @@ export async function getStaticProps() {
 
 
 export default function Home({allPostsData}) {
+  const siteTitle = 'Lucas Neves - Front-end Developer'
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
-          hi. i'm lucas neves. front-end developer from São Paulo - Brazil.
-          currently i work with React and it's ecossystem.
-        </p>
+        <h2>hello, friend!</h2>
+        <p>welcome to my personal website. my intention is to transform it in a lab where i can use technlogies that i've been learning.</p>
+        <p>this is the first version of it.</p>
+        <p>you can contact me on the footer links</p>
+        <p>thank you!</p>
       </section>
     </Layout>
   );
