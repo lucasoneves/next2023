@@ -3,9 +3,13 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px 50px;
+    padding: 20px 15px;
     background: linear-gradient(to right bottom, #4b7bec, #0fb9b1);
     color: #fff;
+
+    @media (min-width: 640px) {
+      padding: 20px 40px;
+    }
   }
 
   .main-header {

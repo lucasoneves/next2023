@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 
-const name = "lucas neves";
+export const name = "lucas neves";
 export const siteTitle = `${name} - i write about technology, web development and carreer.`;
-export function Header({ home }) {
+function Header({ home }) {
   return (
     <>
       <Head>
@@ -32,3 +32,5 @@ export function Header({ home }) {
     </>
   );
 }
+
+export default Header;
