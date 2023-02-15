@@ -3,7 +3,9 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import { Header } from "./Header";
+import Header from "./Header";
+import Footer from './Footer/index.jsx'
+import { name } from "./Header";
 
 export default function Layout({ children, home, projects }) {
   return (
@@ -21,6 +23,7 @@ export default function Layout({ children, home, projects }) {
           </div>
         )}
       </div>
+      <Footer title={name} />
     </>
   );
 }
